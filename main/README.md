@@ -1,0 +1,9 @@
+# CS6360: Database Project
+### The goal of this project is to implement a (very) rudimentary database engine that is based on a simplified file-per-table variation on the SQLite file format, which we call DavisBase. Your implementation should operate entirely from the command line and possibly API calls (no GUI).
+### Like MySQL's InnoDB data engine (SDL), your program will use file-per-table approach to physical storage. Each database table will be physically stored as a separate single file. Each table file will be subdivided into logical sections of fixed equal size call pages. Therefore, each table file size will be exact increments of the global page_size attribute, i.e. all data files must share the same page_size attribute. You may make page_size be a configurable attribute, but your implementation must capable of supporting a page size of 512 Bytes. The test scenarios for grading will be based on a page_size of 512B. Once a database is initialized, your are not required to support a reformat change to its page_size (but you may implement such a feature if you choose).
+
+### Your project must be coded in Java.
+### DavisBase data is encoded in two different kinds of database files—tables files and index files. This Part 1 will be only to implement Table Files. Each database file is stored as a single file in the underlying OS. Each DB file is comprised of one ore more pages (a virtual subdivision of the file). All pages of a file are the same size. For example, if the page size is set to 1024 bytes (1kb), then each DB file size is some multiple of 1024 bytes.
+  • Each page in a Table file is a node in a B+1 tree, either interior or leaf.
+  • Each page in an Index file is a node in a B tree, either interior or leaf.
+The location of each element in a page is referenced with a “page offset” value (i.e. the number of bytes from the beginning of the page that the element is located. 
