@@ -9,3 +9,6 @@ Relational database design using java
 
 * The relational database designed following the standards specified in documents located in ./Guide folder like below if you interested:
 <img src="images/Records.PNG" width="80%">
+<br><img src="images/Pages.PNG" width="80%">
+<br><img src="images/Language_definitions.PNG" width="80%">
+<br><img src="images/Data.PNG" width="80%">
