@@ -6,3 +6,6 @@ Relational database design using java
   2. Meta-data are contained in the database file systems.
   3. The database is based on file system of Bit string I/O. A file system composed of pages of size 512B are realized. All operations (insert, query, update and delete) are based on bit string operation on database files.
   4. Index file system based on B+ tree is also developed for high performance of query records in database. 
+
+* The relational database designed following the standards specified in documents located in ./Guide folder like below if you interested:
+<img src="images/"
