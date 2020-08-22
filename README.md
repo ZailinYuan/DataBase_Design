@@ -8,4 +8,4 @@ Relational database design using java
   4. Index file system based on B+ tree is also developed for high performance of query records in database. 
 
 * The relational database designed following the standards specified in documents located in ./Guide folder like below if you interested:
-<img src="images/"
+<img src="images/Records.PNG" width="80%">
